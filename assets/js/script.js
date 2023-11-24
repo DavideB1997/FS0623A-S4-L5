@@ -15,6 +15,7 @@ document.addEventListener("scroll",function(){
 muroDiM();
 
 
+
 function muroDiM(){
   let padre= document.getElementById("artwork")
   let Ms = Array.from(padre.getElementsByTagName("g"))
@@ -28,7 +29,7 @@ function muroDiM(){
     if(MsDone.includes(randomNumber)){
       return
     }else{
-      Ms[randomNumber].style.opacity = 0;
+      Ms[randomNumber].opacity = 0;
       MsDone.push(randomNumber)
     }
 
@@ -37,6 +38,6 @@ function muroDiM(){
 
 function deselect(array){
   array.forEach(element => {
-    element.style.opacity = 1;
+    element.opacity = 1;
   });
 }
